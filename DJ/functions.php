@@ -321,7 +321,7 @@ add_filter('stylesheet_uri','cache_buster_code',9999,1);
 function LoadJS(){
 	$basejs = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js';
 	$singlejs = get_bloginfo('template_directory') . '/dj.min.js?v='.filemtime(TEMPLATEPATH .'/dj.min.js');
-	$commentjs = get_bloginfo('template_directory') . '/comments-ajax.min.js?v='.filemtime(TEMPLATEPATH .'/comments-ajax.min.js');
+	$commentjs = get_bloginfo('template_directory') . '/comments-ajax.js?v='.filemtime(TEMPLATEPATH .'/comments-ajax.js');
 	
 	$text = "<script src=\"$basejs\"></script>\n<script src=\"$singlejs\"></script>";
 	
