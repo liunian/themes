@@ -163,7 +163,4 @@ $tmp_c = get_comment($tmp_c->comment_parent);
 		</div>
 		<div class="comment-body left"><?php comment_text(); ?></div>
 
-	    <span class="reply">
-	    <?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] , 'reply_text' => '回复') ) ); ?>
-	    </span><!-- /.reply -->
 	</div><!-- /#comment-##  -->
