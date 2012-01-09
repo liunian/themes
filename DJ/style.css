@@ -68,7 +68,7 @@ p {margin-bottom: 1em;}
 #wrapper { position: relative; width: 1100px; margin: 0 auto; overflow:hidden; background:#E9E7E0; min-height:600px; }
 
 #header {position:realtive; float:left; margin-top:42px; width:230px; }
-#header.sticky {position:fixed; top:0;}
+#header.sticky {position:fixed; top:0; float:none;}
 #site-title { padding: 33px 0; text-align: center; background: #f16e50; }
 #site-title a, #site-title a:hover { font-size:36px; line-height:1em; color:white; text-decoration:none; }
 #site-description { display:none; }
