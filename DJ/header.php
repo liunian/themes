@@ -12,16 +12,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--[if lte IE 7]>
+    <script>window.location = "http://liunian.info/demo/browsers.html";</script>
+    <![endif]-->
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title><?php
 	if (is_home()) echo "小居";
 	else {wp_title('', true); echo " &laquo; "; echo "小居";}
 ?></title>
-	<script type="text/javascript">
-		if (!-[1,] && !window.XMLHttpRequest) {
-			window.location = "http://liunian.info/demo/browsers.html";
-		}
-	</script>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" type="text/css" media="screen" />
 	<?php
