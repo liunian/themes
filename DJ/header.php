@@ -49,6 +49,9 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<link rel="shortcut icon" href="http://liunian.info/favicon.ico" type="image/x-ico" />
 	<?php wp_head();?>
+	<!--[if IE]>
+	<script src= "<?php bloginfo('template_directory'); ?>/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div id="wrapper">
