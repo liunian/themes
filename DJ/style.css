@@ -54,6 +54,9 @@ img::-moz-selection	{background: transparent;}
 
 em {font-style:italic;}
 strong {font-weight:bold;}
+sup {vertical-align:super; font-size:smaller; white-space:nowrap;}
+sup.reference:target, cite:target{background-color:#DDEEFF}
+.code{padding:1px 5px;background:#CCC;}
 
 blockquote,pre{margin:5px 0 1em; padding:8px 12px 8px 20px; position:relative; background:#F4F5F7; border-left:3px solid gray; word-wrap:break-word; word-break: break-all;}
 blockquote p:last-child {margin-bottom:0;}
