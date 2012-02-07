@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
             wrapHeight = $wrapper.outerHeight();
 
        if (winHeight > pageHeight) {
-            $content.height(wrapHeight + winHeight - pageHeight);
+            $content.css('min-height', wrapHeight + winHeight - pageHeight);
        }
    }
 
