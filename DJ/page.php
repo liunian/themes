@@ -19,7 +19,7 @@ get_header();
                     <span class="post-edit-link"> <?php edit_post_link('EDIT');?></span>
 				</div>
 			</header>
-			<div class="post-content"><?php the_content(); ?></div>
+			<div class="post-content clearfix"><?php the_content(); ?></div>
 			<footer class="post-footer">
 				<span class="tags"><?php the_tags('', '&nbsp;', ''); ?></span>
 			</footer>	

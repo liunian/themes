@@ -4,7 +4,7 @@
 			<header class="post-header">
 				<h2 class="post-title"><a href="<?php the_permalink(); ?>" title="查看文章：<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			</header>
-			<div class="post-content">
+			<div class="post-content clearfix">
 				<?php the_content("Read More"); ?>
 			</div>
 			<footer class="post-footer clearfix">
