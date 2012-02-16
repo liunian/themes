@@ -20,9 +20,7 @@
 	endif;
 ?>
 
-<?php if (! comments_open() ) : ?>
-    <p class="nocomments">评论已关闭</p>
-<?php else : ?>
+<?php if (have_comments() ) : ?>
     <h3 id="comments-title"><?php comments_number( 'No Comments', 'One comment', '% Comments'); ?></h3>
 
 	<ol class="comment-list">
@@ -34,7 +32,11 @@
 	</ol>
 <?php endif; ?>
 
-
-<?php comment_form(); ?>
+<?php if (comments_open() ) : 
+	comment_form();
+	else :
+?>
+    <p class="nocomments">评论已关闭</p>
+<?php  endif; ?>
 
 </div><!-- #comments -->
