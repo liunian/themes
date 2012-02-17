@@ -1,6 +1,7 @@
-/*
-@version 0.1
-@author deng
+/*!
+ * user defined js
+ * @version 0.1
+ * @author deng
 */
 jQuery(document).ready(function($) {
     var $window = $(window),

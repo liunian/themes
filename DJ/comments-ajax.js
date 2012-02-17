@@ -1,4 +1,4 @@
-/**
+/*!
  * WordPress jQuery-Ajax-Comments v1.3 by Willin Kan.
  * URI: http://willin.heliohost.org/?p=1271
  */
