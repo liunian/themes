@@ -17,11 +17,14 @@
     <![endif]-->
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title><?php
+    $templatePath = get_bloginfo('template_directory');
+    $css = $templatePath . '/style.min.css?v=' . filemtime(TEMPLATEPATH . '/style.min.css');
+    $js = $templatePath . '/dj.min.js?v=' . filemtime(TEMPLATEPATH . '/dj.min.js');
 	if (is_home()) echo "小居";
 	else {wp_title('', true); echo " &laquo; "; echo "小居";}
 ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo $css; ?>" type="text/css" media="screen" />
 	<?php
 	if (is_home()){
 	    $keywords = "小居,流年,Wordpress,生活";
@@ -50,8 +53,17 @@
 	<!--[if IE]>
 	<script src= "<?php bloginfo('template_directory'); ?>/html5.js"></script>
 	<![endif]-->
-</head>
+   </head>
 <body>
+     <script>
+        var templatePath = "<?php echo $templatePath;?>";
+        (function(){
+            var scr = document.createElement('script');
+            scr.src = "<?php echo $js;?>";
+            document.getElementsByTagName('head')[0].appendChild(scr);
+        })();
+    </script>
+
 	<div id="wrapper">
 		<div id="header">
 			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
