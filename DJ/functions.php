@@ -286,4 +286,26 @@ function my_avatar($avatar) {
   return $avatar;
 }
 add_filter('get_avatar', 'my_avatar');
+
+function inlineCode($atts, $content = '') {
+    return "<span class='code'>$content</span>";
+}
+add_shortcode('linecode', 'inlineCode');
+
+function keyBtn($atts, $content = '') {
+    return "<span class='kbd'>$content</span>";
+}
+add_shortcode('kbd', 'keyBtn');
+
+
+function mainPoint($atts, $content = '') {
+    return "<p class='main-point'>$content</p>";
+}
+add_shortcode('mp', 'mainPoint');
+
+
+function subMainPoint($atts, $content = '') {
+    return "<p class='sub-mainpoint'>$content</p>";
+}
+add_shortcode('smp', 'subMainPoint');
 ?>
