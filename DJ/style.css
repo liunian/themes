@@ -52,7 +52,6 @@ body {
 	background:#e2e2e2;
 	font:16px/1.5 Verdana,Tahoma,Helvetica,Georgia,"Microsoft Yahei",Arial,"SimSun",sans-serif;
 	color:#434040;
-	text-shadow:1px 1px white
 }
 h1,h2,h3,h4,h5,h6 {
 	font-weight:bold;
@@ -138,8 +137,11 @@ ol.references>li:target,sup.reference:target,cite:target {
 	background-color:#DEF
 }
 .code {
-	padding:1px 5px;
-	background:#CCC
+	padding:3px 4px;
+	background:#F7F7F9;
+    border: 1px solid #E1E1E8;
+    color: #D14;
+    font-size: 14px;
 }
 blockquote,pre {
 	margin:5px 0 1em;
