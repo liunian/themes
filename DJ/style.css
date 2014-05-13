@@ -137,7 +137,7 @@ ol.references>li:target,sup.reference:target,cite:target {
 	background-color:#DEF
 }
 .code {
-	padding:3px 4px;
+	padding:1px 4px;
 	background:#F7F7F9;
     border: 1px solid #E1E1E8;
     color: #D14;

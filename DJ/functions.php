@@ -287,6 +287,7 @@ function my_avatar($avatar) {
 }
 add_filter('get_avatar', 'my_avatar');
 
+/*
 function inlineCode($atts, $content = '') {
     return "<span class='code'>$content</span>";
 }
@@ -308,4 +309,5 @@ function subMainPoint($atts, $content = '') {
     return "<p class='sub-mainpoint'>$content</p>";
 }
 add_shortcode('smp', 'subMainPoint');
+*/
 ?>
