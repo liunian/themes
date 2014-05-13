@@ -2,14 +2,10 @@
  * WordPress jQuery-Ajax-Comments v1.3 by Willin Kan.
  * URI: http://willin.heliohost.org/?p=1271
  */
-var i = 0, got = -1, len = document.getElementsByTagName('script').length;
-while ( i <= len && got == -1){
-	var js_url = document.getElementsByTagName('script')[i].src,
-			got = js_url.indexOf('comments-ajax.js'); i++ ;
-}
-var edit_mode = '1', // 再編輯模式 ( '1'=開; '0'=不開 )
-		ajax_php_url = js_url.replace('-ajax.js','-ajax.php'),
-		wp_url = js_url.substr(0, js_url.indexOf('wp-content')),
+$(function($) {
+	var edit_mode = '1', // 再編輯模式 ( '1'=開; '0'=不開 )
+		ajax_php_url = templatePath + "/comments-ajax.php",
+		wp_url = templatePath.substr(0, templatePath.indexOf("wp-content")),
 		pic_sb = wp_url + 'wp-admin/images/wpspin_light.gif', // 提交 icon
 		pic_no = wp_url + 'wp-admin/images/no.png',          // 錯誤 icon
 		pic_ys = wp_url + 'wp-admin/images/yes.png',         // 成功 icon
@@ -21,7 +17,6 @@ var edit_mode = '1', // 再編輯模式 ( '1'=開; '0'=不開 )
 		cancel_edit = '取消编辑',
 		edit, num = 1, comm_array=[]; comm_array.push('');
 
-jQuery(document).ready(function($) {
 		$comments = $('#comments-title'); // 評論數的 ID
 		$cancel = $('#cancel-comment-reply-link'); cancel_text = $cancel.text();
 		$submit = $('#commentform #submit'); $submit.attr('disabled', false);

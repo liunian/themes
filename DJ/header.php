@@ -15,8 +15,9 @@
     <!--[if lte IE 7]>
     <script>window.location = "http://liunian.info/demo/browsers.html";</script>
     <![endif]-->
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-	<title><?php
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <title><?php
     $templatePath = get_bloginfo('template_directory');
     $css = $templatePath . '/style.min.css?v=' . filemtime(TEMPLATEPATH . '/style.min.css');
     $js = $templatePath . '/dj.min.js?v=' . filemtime(TEMPLATEPATH . '/dj.min.js');

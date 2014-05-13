@@ -21,6 +21,8 @@ jQuery(document).ready(function($) {
    // readjust #content's height to make footer in the bottom of the window
    // if page's height less than window's height
    function readjustContentHeight() {
+        if ($('#header').css('float') !== 'left') return;
+
         var winHeight = $window.height(),
             pageHeight = $('body').outerHeight(),
             wrapHeight = $wrapper.outerHeight();
