@@ -909,7 +909,7 @@ table .headerSortUp.purple,table .headerSortDown.purple {
         float: none;
         white-space: nowrap;
     }
-    .menu li.hover ul{
+    .menu li:hover ul{
         display: block;
     }
     #content {
