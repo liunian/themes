@@ -917,6 +917,11 @@ table .headerSortUp.purple,table .headerSortDown.purple {
         margin-left: 0 !important;
         width: auto;
     }
+    article img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
     #mini-pagenavi {
         margin: 0;
         padding: 20px 0;
